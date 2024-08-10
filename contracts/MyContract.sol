@@ -19,12 +19,26 @@ contract MyContract {
         string myString;
     }
 
-    MyStruct public myStruct = MyStruct(1, "Hello, world!")
+    MyStruct public myStruct = MyStruct(1, "Hello, world!");
+
+    // Array
+    uint[] public uintArray = [1, 2, 3];
+
+    // 2D array
+    uint256[][] public array2D = [[1,2,3], [4,5,6]];
 
     // Local Variables - can be accessed only in the scope of function
     // pure means that this function doesn't mutate anything outside its scope
     function getValue() public pure returns (uint) { 
         uint value = 1;
         return value;
+    }
+
+    function addValue (uint _value) public {
+        uintArray.push(_value);
+    }
+
+    function valueCount() public view returns (uint){
+        return uintArray.length;
     }
 }
