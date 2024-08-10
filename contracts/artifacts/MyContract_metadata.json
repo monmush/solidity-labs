@@ -7,74 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_author",
-						"type": "string"
-					}
-				],
-				"name": "addBook",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_author",
-						"type": "string"
-					}
-				],
-				"name": "addMyBook",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "countEvenNumbers",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"name": "books",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "author",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -83,27 +21,36 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "isEvenNumber",
+				"outputs": [
+					{
+						"internalType": "bool",
 						"name": "",
-						"type": "address"
-					},
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "myBooks",
+				"name": "numbers",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "author",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -138,11 +85,11 @@
 	},
 	"sources": {
 		"contracts/MyContract.sol": {
-			"keccak256": "0x69873838944e70cf0f1c3f97154bef21333f6e8f364815a46b521778a126c902",
+			"keccak256": "0x944a2d40e1a25d6fd2b296b3f8c5a202658d216988cfa700046400030800d384",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://77ce9d1329062c66d5fd065ea218bf7c36be66eb60d4506be0e10df5a1384b3f",
-				"dweb:/ipfs/QmTfiryiJ2u446uGTBnSQzNKPLyDJfwz3GvVRBeeLvG1uT"
+				"bzz-raw://c059369d0f0941a743862d0b16bbfd5a4e2e950ef13767120a9cb9f687815d75",
+				"dweb:/ipfs/QmYLTfaVX5AGnQgD89VjEEK23uPpWPtT5REZPCVmddD9AJ"
 			]
 		}
 	},
