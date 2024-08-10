@@ -6,14 +6,52 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_value",
+						"name": "_id",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_author",
+						"type": "string"
 					}
 				],
-				"name": "addValue",
+				"name": "addBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_author",
+						"type": "string"
+					}
+				],
+				"name": "addMyBook",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -24,141 +62,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
-				"name": "array2D",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getValue",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myBytes32",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myInt",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myString",
+				"name": "books",
 				"outputs": [
 					{
 						"internalType": "string",
-						"name": "",
+						"name": "title",
 						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myStruct",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "myUint256",
-						"type": "uint256"
 					},
 					{
 						"internalType": "string",
-						"name": "myString",
+						"name": "author",
 						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myUint",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myUint256",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myUint8",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -167,30 +83,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "uintArray",
-				"outputs": [
+						"type": "address"
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "valueCount",
+				"name": "myBooks",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -225,11 +138,11 @@
 	},
 	"sources": {
 		"contracts/MyContract.sol": {
-			"keccak256": "0x34b05b7f5a40c3c3a34c527156025c3f99d7919a09e789587cce39845f1559e4",
+			"keccak256": "0x69873838944e70cf0f1c3f97154bef21333f6e8f364815a46b521778a126c902",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ac743205af632a1aad69435e3a4d65db6d5e33646ac1dc89a2f18d1167312baf",
-				"dweb:/ipfs/QmddSmLcjq1kfjEp3eC2nk72HAF89BtaqAy4koZ4WDUoL8"
+				"bzz-raw://77ce9d1329062c66d5fd065ea218bf7c36be66eb60d4506be0e10df5a1384b3f",
+				"dweb:/ipfs/QmTfiryiJ2u446uGTBnSQzNKPLyDJfwz3GvVRBeeLvG1uT"
 			]
 		}
 	},
